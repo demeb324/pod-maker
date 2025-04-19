@@ -1,0 +1,88 @@
+.create-pod-page {  /* Changed from form to create-pod-page */
+    padding: 20px;
+    textAlign: center;
+}
+
+.create-pod-page .header { /* Targeting header within create-pod-page */
+    margin-bottom: 30px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: left;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    borderRadius: 3px;
+    fontSize: 1em;
+}
+
+.input-section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+
+/* New styles to arrange radio buttons in a column */
+.radio-group.color-group,
+.radio-group.weapon-group {
+    flex-direction: column;       /* Arrange items in a column */
+}
+
+.radio-group.color-group label,
+.radio-group.weapon-group label {
+    margin-right: 0;            /* Remove horizontal margin */
+    margin-bottom: 5px;          /* Add vertical margin between labels */
+    display: block;              /* Make labels display as blocks */
+}
+
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    borderRadius: 5px;
+    fontSize: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
